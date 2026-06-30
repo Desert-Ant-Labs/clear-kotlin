@@ -1,0 +1,17 @@
+.DS_Store
+*.swp
+*.log
+
+# Gradle / Android Studio
+.gradle/
+build/
+.idea/
+.vscode/
+local.properties
+captures/
+*.iml
+.kotlin/
+.cxx/
+obj/
+.externalNativeBuild/
+
