@@ -1,7 +1,9 @@
 # Clear for Android
 
-Kotlin library that runs the Clear speech-enhancement model on Android.
-Mirrors the role and public API of the [`clear-swift`](https://github.com/Desert-Ant-Labs/clear-swift) package on Apple platforms.
+Kotlin library that runs the Clear speech-enhancement model on Android:
+on-device noise reduction and dereverberation, then R128 loudness
+normalization to a target LUFS. Mirrors the role and public API of the
+[`clear-swift`](https://github.com/Desert-Ant-Labs/clear-swift) package on Apple platforms.
 
 Two published artifacts (group `ai.desertant`):
 - `clear`: Android library (AAR) with both ONNX model variants bundled
@@ -260,9 +262,16 @@ Kotlin DSP to the Swift reference. They're checked in and consumed by the
 `:dsp` parity tests; treat a parity-test failure as a real numerical
 divergence to investigate.
 
+## Other platforms
+
+Same model, native on each platform:
+
+- [`clear-swift`](https://github.com/Desert-Ant-Labs/clear-swift): Swift for iOS and macOS.
+- [`clear-js`](https://github.com/Desert-Ant-Labs/clear-js): JS/TS for Node and browser.
+- Model weights and card: [`desert-ant-labs/clear`](https://huggingface.co/desert-ant-labs/clear)
+
 ## See also
 
-- [`clear-swift`](https://github.com/Desert-Ant-Labs/clear-swift): the Swift package this library mirrors.
 - [`clear-training`](https://github.com/Desert-Ant-Labs/clear-training): training, evaluation, and the published model card.
 
 ## License
