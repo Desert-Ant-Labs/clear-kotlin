@@ -1,5 +1,29 @@
 # Clear for Android
 
+> [!IMPORTANT]
+> **This repository is deprecated. Development has moved to
+> [`Desert-Ant-Labs/desert-ant-core`](https://github.com/Desert-Ant-Labs/desert-ant-core).**
+>
+> Clear's SDK now lives in that monorepo, written once and bound to every
+> platform, alongside the other Desert Ant model SDKs:
+>
+> | What | Where it lives now |
+> |---|---|
+> | Swift / Core ML | `Sources/Clear/` (SwiftPM product `Clear`) |
+> | JavaScript / TypeScript | `packages/clear-node/` |
+> | Kotlin / Android | `packages/clear-kotlin/` |
+>
+> **Install from a package manager and nothing changes for you.** Clear ships as
+> `@desert-ant-labs/clear` on npm and `ai.desertant:clear` on Maven Central, with
+> the model on the Hub at
+> [`desert-ant-labs/clear`](https://huggingface.co/desert-ant-labs/clear). Swift
+> Package Manager users depend on `desert-ant-core` and take its `Clear` product
+> instead of pointing at this repository.
+>
+> Issues and pull requests should go to the monorepo. This repository stays up so
+> existing pins keep resolving, but it no longer receives fixes: the last release
+> from here was `0.1.0`.
+
 Kotlin library that runs the Clear speech-enhancement model on Android:
 on-device noise reduction and dereverberation, then R128 loudness
 normalization to a target LUFS. Mirrors the role and public API of the
